@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms & Disclaimer • svsustudent.com</title>
+  <meta name="description" content="Terms and disclaimer for svsustudent.com student subdomains." />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">●</span>
+        <span class="brand-text">svsustudent.com</span>
+      </a>
+
+      <nav class="nav">
+        <a href="./index.html">Back to portfolio</a>
+        <a class="nav-cta" href="./index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1 class="page-title">Terms & Disclaimer</h1>
+          <p class="muted">
+            This page describes how this site works and what responsibility each party has.
+          </p>
+        </div>
+
+        <div class="card prose">
+          <h2>1) Independent Student Sites</h2>
+          <p>
+            Each subdomain (for example, <code class="inline-code">studentname.svsustudent.com</code>) is an
+            independent student-created portfolio and is not an official university website.
+            This service is not affiliated with any university, department, or institution.
+          </p>
+
+          <h2>2) Content Responsibility</h2>
+          <p>
+            The student who owns a subdomain is responsible for all content posted on their page, including
+            text, images, embedded media, files (such as resumes), and links to third-party websites.
+          </p>
+          <ul class="bullets">
+            <li>Do not upload content you do not have rights to use.</li>
+            <li>Do not publish private data (home address, sensitive ID numbers, etc.).</li>
+            <li>Do not post harassment, threats, hate content, or illegal content.</li>
+          </ul>
+
+          <h2>3) No Professional Advice</h2>
+          <p>
+            Content on these pages is provided for general informational purposes. Nothing on any subdomain
+            should be considered legal, medical, financial, or professional advice.
+          </p>
+
+          <h2>4) Third-Party Links</h2>
+          <p>
+            Student pages may link to or embed third-party services (e.g., LinkedIn, GitHub, YouTube).
+            We do not control those services and are not responsible for their content, policies, or availability.
+          </p>
+
+          <h2>5) Availability & Changes</h2>
+          <p>
+            We may modify or discontinue the service at any time, including changing templates or limiting
+            resource usage, to keep the platform stable and safe.
+          </p>
+
+          <h2>6) Removal Policy</h2>
+          <p>
+            We reserve the right to remove or suspend a subdomain if it violates these terms, receives a valid
+            legal complaint, or poses security/abuse risks (spam, phishing, malware, impersonation).
+          </p>
+
+          <h2>7) Trademark / Affiliation Disclaimer</h2>
+          <p>
+            Any university names referenced by students are for identification purposes only. University names,
+            marks, and logos belong to their respective owners. Students should not imply endorsement or affiliation.
+          </p>
+
+          <h2>8) Contact</h2>
+          <p>
+            For concerns, takedown requests, or corrections, contact:
+            <a href="mailto:admin@svsustudent.com">admin@svsustudent.com</a>
+          </p>
+
+          <hr class="hr" />
+
+          <p class="muted small">
+            Last updated: <span id="updated"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="muted">© <span id="year"></span> svsustudent.com</div>
+      <div class="footer-links">
+        <a href="./index.html">Home</a>
+        <a href="#main">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const now = new Date();
+    document.getElementById("year").textContent = now.getFullYear();
+    // Simple human-readable date (no dependencies)
+    document.getElementById("updated").textContent =
+      now.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  </script>
+</body>
+</html>

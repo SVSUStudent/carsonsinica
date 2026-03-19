@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Name • Portfolio</title>
+  <meta name="description" content="Personal portfolio and resume for Student Name." />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">●</span>
+        <span class="brand-text">svsustudent.com</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="./assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Student Portfolio</p>
+          <h1>Student Name</h1>
+          <p class="lead">
+            Major • Graduation Year • Focus area (e.g., IT / Cybersecurity / Marketing).
+            Short one-liner about what you’re aiming for.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Contact</a>
+            <a class="btn btn-ghost" href="#projects">View Projects</a>
+          </div>
+
+          <div class="meta-row">
+            <div class="chip">📍 Saginaw, MI</div>
+            <div class="chip">🎓 :contentReference[oaicite:0]{index=0}</div>
+            <div class="chip">✅ Open to internships</div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="avatar">
+            <!-- Optional headshot: replace src with ./assets/headshot.jpg -->
+            <img src="./assets/headshot.jpg" alt="Headshot of Student Name" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-fallback');" />
+            <div class="avatar-fallback-inner" aria-hidden="true">
+              <div class="initials">SN</div>
+              <div class="small">Add headshot.jpg</div>
+            </div>
+          </div>
+
+          <div class="hero-card-body">
+            <div class="stat">
+              <div class="stat-label">Primary Skill</div>
+              <div class="stat-value">Web Dev / IT / Design</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Tools</div>
+              <div class="stat-value">GitHub • Excel • Linux</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Certs</div>
+              <div class="stat-value">CompTIA (planned) / Google</div>
+            </div>
+
+            <div class="links">
+              <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+              <a class="link" href="mailto:you@example.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">A quick summary employers actually read.</p>
+        </div>
+
+        <div class="card">
+          <p>
+            I’m a <strong>[Major]</strong> student focused on <strong>[focus]</strong>. I enjoy building
+            <strong>[projects / systems / designs]</strong> and I’m looking for opportunities in
+            <strong>[internships / roles]</strong>.
+          </p>
+
+          <div class="two-col">
+            <div>
+              <h3>Strengths</h3>
+              <ul class="bullets">
+                <li>Clear communication and reliable follow-through</li>
+                <li>Hands-on troubleshooting and problem solving</li>
+                <li>Comfortable with modern tools and fast learning</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Highlights</h3>
+              <ul class="bullets">
+                <li>Relevant coursework: [Course 1], [Course 2]</li>
+                <li>Experience: [Campus org / job / project]</li>
+                <li>Awards / athletics / leadership: [optional]</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Keep these tight: what it is, what you used, the outcome.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card project">
+            <div class="project-top">
+              <h3>Project Name</h3>
+              <span class="tag">2026</span>
+            </div>
+            <p class="muted">
+              1–2 lines: what the project does and why it matters.
+            </p>
+            <div class="pill-row">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JS</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Another Project</h3>
+              <span class="tag">Case Study</span>
+            </div>
+            <p class="muted">
+              Focus on impact: “Saved X time”, “Improved Y”, “Automated Z”.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">Automation</span>
+              <span class="pill">APIs</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Write-up</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Leadership / Athletics</h3>
+              <span class="tag">Optional</span>
+            </div>
+            <p class="muted">
+              If they’re an athlete/club leader: add a highlight reel, stats, or role details.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Teamwork</span>
+              <span class="pill">Discipline</span>
+              <span class="pill">Performance</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Highlights</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Profile</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Resume</h2>
+          <p class="muted">Upload a PDF at <code class="inline-code">/assets/resume.pdf</code>.</p>
+        </div>
+
+        <div class="card resume-card">
+          <div class="resume-left">
+            <h3>Resume PDF</h3>
+            <p class="muted">
+              Download the latest resume or view it in a new tab.
+            </p>
+
+            <div class="row">
+              <a class="btn btn-primary" href="./assets/resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a class="btn btn-ghost" href="./assets/resume.pdf" download>Download</a>
+            </div>
+
+            <div class="fineprint">
+              Tip: keep the file name exactly <strong>resume.pdf</strong> so updates are easy.
+            </div>
+          </div>
+
+          <div class="resume-right">
+            <div class="mini-list">
+              <h4>Quick Skills</h4>
+              <ul class="bullets">
+                <li>Skill 1 • Skill 2 • Skill 3</li>
+                <li>Tool 1 • Tool 2 • Tool 3</li>
+                <li>Soft skills: communication, ownership</li>
+              </ul>
+            </div>
+
+            <div class="mini-list">
+              <h4>Relevant Links</h4>
+              <ul class="bullets">
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="mailto:you@example.com">Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Make it easy to reach you in one click.</p>
+        </div>
+
+        <div class="grid contact-grid">
+          <div class="card">
+            <h3>Email</h3>
+            <p class="muted">Best for internships & formal outreach.</p>
+            <a class="btn btn-primary" href="mailto:you@example.com">you@example.com</a>
+          </div>
+
+          <div class="card">
+            <h3>LinkedIn</h3>
+            <p class="muted">Quick credibility boost.</p>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">Open LinkedIn</a>
+          </div>
+
+          <div class="card">
+            <h3>GitHub</h3>
+            <p class="muted">Show proof, not promises.</p>
+            <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener">Open GitHub</a>
+          </div>
+        </div>
+
+        <p class="footer-note muted">
+          Independent student portfolio. Not affiliated with any university or institution.
+          <a href="./terms.html">Terms & Disclaimer</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="muted">© <span id="year"></span> Student Name</div>
+      <div class="footer-links">
+        <a href="./terms.html">Terms & Disclaimer</a>
+        <a href="#main">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
