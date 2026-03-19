@@ -217,18 +217,13 @@ h1{
   display: block;
 }
 
-/* hide fallback unless image fails */
 .avatar-fallback-inner{
   display: none;
-}
-
-/* only show fallback when image is missing/broken */
-.avatar.avatar-fallback .avatar-fallback-inner{
-  display: grid;
-  gap: 6px;
-  place-items: center;
   position: absolute;
   inset: 0;
+  place-items: center;
+  gap: 6px;
+  text-align: center;
 }
 
 .avatar.avatar-fallback img{
